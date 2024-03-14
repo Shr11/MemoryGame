@@ -34,7 +34,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    
+    perspective: 1000px;
 }
 .memory-card {
     width: calc(25% - 10px);
@@ -42,6 +42,8 @@ body {
     position: relative;
     margin: 5px;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;     
 }
 
 .memory-card:active {
