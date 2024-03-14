@@ -41,6 +41,16 @@ body {
     height: calc(33.333% - 10px);
     position: relative;
     margin: 5px;
+    transform: scale(1);
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
 
 .front-face, .back-face {
